@@ -1,11 +1,55 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/css-min.css">
-    </head>
-    <body>
+<html lang = en-us>
 
-    </body>
+<head>
+    <title>xsolla</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style-min.css">
+</head>
+
+<body>
+  <main class="page-main">
+    <h1 class="visually-hidden">Concert schedule</h1>
+    <section class="event">
+      <h2 class="event__title">Event Listing</h2>
+      <nav class="event__search">
+        <label class="event__searche-title" for="city">city:</label>
+        <select class="event__search-select" name="city" id="city">
+          <option value="Amsterdam">Amsterdam</option>
+          <option value="Berlin">Berlin</option>
+          <option value="Rim">Rim</option>
+          <option value="Sr.Petersburg">Sr.Petersburg</option>
+          <option value="all" selected>all</option>
+        </select>
+        <label class="event__c" for="month">month:</label>
+        <select class="event__search-select" name="month" id="month">
+          <option value="all" selected>all</option>
+          <option value="01">January</option>
+          <option value="02">February </option>
+          <option value="03">March</option>
+          <option value="04">April</option>
+          <option value="05">May</option>
+          <option value="06">June</option>
+          <option value="07">July</option>
+          <option value="08">August</option>
+          <option value="09">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+        </select>
+      </nav>
+      <ul class="event__item-list">
+        <li class="event__item">
+          <div class="event__item-day">14</div>
+          <h3 class="event__item-title">Rave Autumn</h3>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <script src="js/backend.js"></script>
+  <script src="js/event.js"></script>
+  <script src="js/filter.js"></script>
+</body>
+
 </html>

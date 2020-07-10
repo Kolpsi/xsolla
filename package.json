@@ -1,0 +1,23 @@
+{
+    "name": "xsolla",
+    "version": "1.0.0",
+    "scripts": {
+        "editorconfig": "editorconfig-cli",
+        "stylelint": "stylelint \"source/less/**/*.less\" —syntax less",
+        "test": "npm run editorconfig && npm run stylelint",
+        "build": "gulp build",
+        "start": "gulp start"
+    },
+    "devDependencies": {
+        "autoprefixer": "^9.8.4",
+        "browser-sync": "^2.26.7",
+        "csso": "^4.0.3",
+        "gulp": "^4.0.2",
+        "gulp-csso": "^4.0.1",
+        "gulp-less": "^4.0.1",
+        "gulp-plumber": "^1.2.1",
+        "gulp-postcss": "^8.0.0",
+        "gulp-rename": "^2.0.0",
+        "gulp-sourcemaps": "^2.6.5"
+    }
+}

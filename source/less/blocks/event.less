@@ -1,0 +1,80 @@
+.event__title {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 66px;
+  text-align: center;
+};
+
+.event__search {
+  text-align: center;
+}
+
+.event__searche-title {
+  font-size: 18px;
+  line-height: 33px;
+};
+
+.event__search-select {
+  box-sizing: border-box;
+  width: 110px;
+
+  border: 1px solid #444444;
+  border-radius: 6px;
+};
+
+.event__item-list {
+  padding: 0;
+
+  list-style: none;
+  text-align: center;
+};
+
+.event__item {
+  position: relative;
+
+  width: 320px;
+  height: 200px;
+  margin-bottom: 10px;
+
+  background: url("https://cdn3.xsolla.com/files/uploaded/113250/826adbf1a19ba19e6ba9af9308d2b309.png") center no-repeat;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    width: 14px;
+    height: 18px;
+
+    background: url("/img/vector.svg") center no-repeat;
+  };
+};
+
+.event__item-day {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+};
+
+.event__item-title {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+};  
