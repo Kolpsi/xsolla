@@ -7,10 +7,10 @@
         month = document.querySelector('#month');
     /**
     * @description фильтр по типу города
-    * @param {object} object - объект объявления
-    * @return {object} подходящее по параметрам объявление.
+    * @param {object} object - объект события
+    * @return {object} подходящее по параметрам событие.
     */
-  var checkCityName = function (object) {
+   let checkCityName = function (object) {
     if (city.value === 'all') {
       return window.data;
     }
@@ -18,10 +18,10 @@
   };
   /**
     * @description фильтр по месяцу
-    * @param {object} object - объект объявления
-    * @return {object} подходящее по параметрам объявление.
+    * @param {object} object - объект события
+    * @return {object} подходящее по параметрам событие.
     */
-  var checkMonth = function (object) {
+   let checkMonth = function (object) {
     if (month.value === 'all') {
       return window.data;
     }
@@ -31,7 +31,7 @@
   window.filters = {
     /**
     * @description фильтр массива по кол-ву и типу
-    * @param {array} data - массив объявлений
+    * @param {array} data - массив событий
     * @return {array} отфильтрованный массив по всем фильтрам.
     */
     getFilteredEvents: function (data) {
@@ -42,5 +42,4 @@
             return filterData;
     }
   };
-
 })();

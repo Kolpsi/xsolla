@@ -32,11 +32,15 @@
 .event__item {
   position: relative;
 
+  display: none;
   width: 320px;
   height: 200px;
+  margin: 0 auto;
   margin-bottom: 10px;
 
-  background: url("https://cdn3.xsolla.com/files/uploaded/113250/826adbf1a19ba19e6ba9af9308d2b309.png") center no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   &::before {
     content: "";
     position: absolute;
@@ -78,3 +82,78 @@
   line-height: 36px;
   color: #ffffff;
 };  
+
+@media (min-width: @tablet-width) {
+  .event__item {
+    flex-grow: 1;
+
+    // &:first-child {
+    //   margin-left: 50px;
+    // }
+  }
+
+  .event__item-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .event__item {
+    width: 600px;
+    height: 400px;
+    flex-grow: 0;
+    &:last-child {
+        flex-grow: 0;
+      }
+    &:nth-child(2n) {
+      margin-left: 100px;
+    }
+  }
+
+  .event__item&:nth-child(2n+1) {
+      margin-right: 100px;
+  }
+
+  .event__title {
+    font-size: 48px;
+    line-height: 66px;
+    padding:   100px 0 40px 100px;
+    margin: 0;
+    text-align: left;
+  }
+
+  .event__search {
+    text-align: left;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 26px;
+  }
+
+  .event__searche-title {
+    text-transform: ;
+    font-size: 24px;
+    line-height: 33px;
+    margin-left: 100px;
+    
+  }
+
+  .event__search-select {
+    width: 200px; 
+    padding: 9px 0 8px 22px;
+    background-color: #ffffff;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .event {
+    width: 1440px;
+    margin: 0 auto;
+
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+  }
+}
